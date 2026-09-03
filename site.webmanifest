@@ -1,0 +1,27 @@
+{
+  "name": "Deskbound — 5-minute desk resets",
+  "short_name": "Deskbound",
+  "description": "Five-minute mobility breaks for office and remote workers with back, neck and hip pain from sitting.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#16181D",
+  "theme_color": "#16181D",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

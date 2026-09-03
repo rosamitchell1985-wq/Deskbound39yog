@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accessibility Statement | Deskbound</title>
+<meta name="description" content="Deskbound's accessibility commitment: WCAG 2.2 Level AA as the target, ADA Title III context, what we've done, known gaps, and how to report a problem.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://deskbound.co/accessibility.html">
+<link rel="alternate" hreflang="en-us" href="https://deskbound.co/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://deskbound.co/accessibility.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Deskbound">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Accessibility Statement | Deskbound">
+<meta property="og:description" content="Our WCAG 2.2 AA target, what's done, what's not, and how to report a problem.">
+<meta property="og:url" content="https://deskbound.co/accessibility.html">
+<meta name="twitter:card" content="summary">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Deskbound">
+<meta name="theme-color" content="#16181D" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16181D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="preload" as="font" type="font/woff2" href="./assets/fonts/inter-tight-latin.woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="brand" href="./index.html"><span class="brand__mark" aria-hidden="true"></span>Deskbound</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav__list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./routines.html">Routines</a></li>
+        <li><a href="./posture.html">Desk setup</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs wrap" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="./index.html">Home</a></li>
+      <li aria-current="page">Accessibility</li>
+    </ol>
+  </nav>
+
+  <section class="section" aria-labelledby="page-h">
+    <div class="wrap">
+      <div class="read">
+        <h1 id="page-h">Accessibility statement</h1>
+        <p class="muted"><strong>Last updated:</strong> <time datetime="2026-08-24">August 24, 2026</time>.</p>
+
+        <p>Deskbound is built for people whose bodies are giving them trouble. A site about that which is hard to use would be a poor joke. We aim to meet <strong>WCAG 2.2 Level AA</strong>, and we treat the Americans with Disabilities Act (ADA) Title III expectation of accessible public accommodations as the standard we are working to, not a box to check.</p>
+
+        <h2>What we have done</h2>
+        <ul>
+          <li><strong>Contrast.</strong> Body text on the page background measures about 13.9:1. Secondary text measures about 6.6:1 and the blue accent about 6.0:1, all above the 4.5:1 requirement. Borders and interface edges clear 3:1.</li>
+          <li><strong>Keyboard.</strong> Every control &mdash; navigation, region chips, timer buttons, the mute toggle, accordions, forms and the consent banner &mdash; is reachable and operable by keyboard, in a logical order, with a visible blue focus ring. There is no keyboard trap, and no <code>outline: none</code> without a replacement.</li>
+          <li><strong>Skip link.</strong> The first tab stop on every page jumps to the main content.</li>
+          <li><strong>Screen readers.</strong> The timer announces every transition through a polite live region: which move is starting, its number in the sequence, and the cue. Pause, skip, reset and completion are all announced. The mobile menu uses <code>aria-expanded</code> and <code>aria-controls</code>; the region chips use <code>aria-pressed</code>; the FAQ uses native <code>&lt;details&gt;</code> elements.</li>
+          <li><strong>Tap targets.</strong> Interactive controls are at least 44&times;44 CSS pixels with at least 8 pixels between them. Timer controls are 56 pixels tall.</li>
+          <li><strong>Text sizing.</strong> Everything is sized in relative units, so browser and iOS Dynamic Type settings scale it. Form inputs are at least 16px so iOS does not zoom on focus.</li>
+          <li><strong>Motion.</strong> There are no entrance animations anywhere on this site. Under <code>prefers-reduced-motion: reduce</code>, the remaining transitions and smooth scrolling are switched off. Nothing flashes.</li>
+          <li><strong>Sound.</strong> The timer's transition beep is <strong>off by default</strong> and every audio cue has a visual and a spoken equivalent. Nothing on this site requires you to hear it.</li>
+          <li><strong>Images.</strong> Every photograph has alt text describing what is happening in it. Decorative images are marked as decorative.</li>
+          <li><strong>Structure.</strong> One <code>&lt;h1&gt;</code> per page, headings in order, real landmarks (<code>header</code>, <code>nav</code>, <code>main</code>, <code>footer</code>), real <code>&lt;label&gt;</code> elements on every form field, and errors announced rather than shown only in color.</li>
+          <li><strong>Orientation and zoom.</strong> The site works in portrait and landscape and reflows to 320px wide at 400% zoom without horizontal scrolling.</li>
+        </ul>
+
+        <h2>Known gaps</h2>
+        <p>Stating these is more useful than claiming perfection.</p>
+        <ul>
+          <li>Third-party advertising is not under our control. An ad may not meet the same contrast, motion or labeling standard as the rest of the page. We keep ad slots away from controls and out of the reading flow, but we cannot audit each creative.</li>
+          <li>The wide tables on the routines and desk setup pages scroll horizontally inside their own container on a narrow phone. That is a reasonable pattern but it does mean a horizontal gesture inside the table.</li>
+          <li>We have not published a formal VPAT or third-party audit. Testing so far is manual: VoiceOver on iOS and macOS, NVDA on Windows, keyboard-only passes, and 400% zoom checks on every page.</li>
+        </ul>
+
+        <h2>Assistive technology we test with</h2>
+        <ul>
+          <li>VoiceOver on iOS 18 with Safari, on an iPhone.</li>
+          <li>VoiceOver on macOS with Safari.</li>
+          <li>NVDA on Windows 11 with Firefox and Chrome.</li>
+          <li>Keyboard only, no pointer, on all four combinations.</li>
+          <li>Browser zoom at 200% and 400%, and iOS Dynamic Type at the largest standard setting.</li>
+        </ul>
+
+        <h2>If something does not work</h2>
+        <p>Tell us and we will fix it. Include the page, what you were trying to do, and your device, browser and assistive technology if you know them.</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:accessibility@deskbound.co">accessibility@deskbound.co</a> &mdash; or use the <a href="./contact.html">contact form</a> and choose &ldquo;An accessibility problem.&rdquo;</li>
+          <li><strong>Phone:</strong> <a href="tel:+12085550142">(208) 555-0142</a>, Monday to Friday, 9:00 AM to 4:00 PM Mountain Time.</li>
+          <li><strong>Mail:</strong> Deskbound Media LLC, 412 W Franklin St, Suite 210, Boise, ID 83702.</li>
+        </ul>
+        <p>We aim to acknowledge within <strong>two business days</strong> and to resolve confirmed issues within <strong>thirty days</strong>. If a fix will take longer, we will tell you why and offer the content another way &mdash; a plain-text version of any routine, for example, is always available on request.</p>
+
+        <h2>Standards we work to</h2>
+        <ul>
+          <li><a href="https://www.w3.org/TR/WCAG22/" rel="nofollow noopener" target="_blank">Web Content Accessibility Guidelines (WCAG) 2.2</a>, Level AA.</li>
+          <li><a href="https://www.ada.gov/" rel="nofollow noopener" target="_blank">Americans with Disabilities Act</a>, Title III.</li>
+        </ul>
+        <p>This statement is reviewed whenever a page changes materially, and at least twice a year.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Deskbound</h2>
+        <p class="muted">Five-minute mobility breaks for people who sit for a living. Built for a phone, a desk chair and no equipment.</p>
+        <address>
+          Deskbound Media LLC<br>
+          412 W Franklin St, Suite 210<br>
+          Boise, ID 83702<br>
+          <a href="tel:+12085550142">(208) 555-0142</a><br>
+          <a href="mailto:hello@deskbound.co">hello@deskbound.co</a>
+        </address>
+      </div>
+      <div>
+        <h2>Site</h2>
+        <ul>
+          <li><a href="./routines.html">Routines</a></li>
+          <li><a href="./posture.html">Desk setup</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="./privacy-policy.html">Privacy policy</a></li>
+          <li><a href="./cookie-policy.html">Cookie policy</a></li>
+          <li><a href="./terms.html">Terms of use</a></li>
+          <li><a href="./disclaimer.html">Health disclaimer</a></li>
+          <li><a href="./accessibility.html">Accessibility</a></li>
+          <li><a href="#" data-cookie-settings>Cookie settings</a></li>
+          <li><a href="#" data-do-not-sell>Do Not Sell or Share My Personal Information</a></li>
+        </ul>
+        <p class="muted" id="dns-status" hidden></p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; <span data-year>2026</span> Deskbound Media LLC. All rights reserved.</p>
+      <p>Deskbound publishes general movement information. It is not medical advice, and it does not diagnose or treat any condition. Talk to a physician or physical therapist before starting, especially if you have an injury or ongoing pain. In an emergency, call 911.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="consent" id="consent" hidden>
+  <div class="consent__inner">
+    <p><strong>Cookies.</strong> We use a required cookie to remember this choice. If you accept, we also allow cookies from advertising vendors, including Google, which may be used to personalize ads. Rejecting keeps the site fully functional. <a href="./cookie-policy.html">Cookie policy</a></p>
+    <div class="btn-row">
+      <button class="btn btn--primary" type="button" id="consent-accept">Accept</button>
+      <button class="btn btn--quiet" type="button" id="consent-reject">Reject</button>
+    </div>
+  </div>
+</div>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

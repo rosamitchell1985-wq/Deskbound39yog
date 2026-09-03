@@ -1,0 +1,6 @@
+# robots.txt for https://deskbound.co/
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://deskbound.co/sitemap.xml

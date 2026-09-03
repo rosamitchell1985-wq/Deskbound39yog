@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Deskbound">
+  <rect width="64" height="64" fill="#16181D"/>
+  <rect x="0.5" y="0.5" width="63" height="63" fill="none" stroke="#2A2F38"/>
+  <rect x="12" y="14" width="10" height="36" fill="#4C8DFF"/>
+  <rect x="28" y="14" width="24" height="6" fill="#E8EAED"/>
+  <rect x="28" y="29" width="24" height="6" fill="#E8EAED"/>
+  <rect x="28" y="44" width="24" height="6" fill="#E0A33E"/>
+</svg>
